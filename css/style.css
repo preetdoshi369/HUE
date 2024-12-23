@@ -1511,6 +1511,7 @@ a:hover {
   flex-wrap: nowrap;
 }
 
+
 /* PAGE HEADER Ikshana */
 .page-header-ikshana {
   width: 100%;
@@ -1807,6 +1808,112 @@ a:hover {
   }
 
   .page-header-toyota .inner p {
+    font-size: 10px; /* Adjust this as well */
+  }
+}
+
+/* PAGE HEADER Toyota */
+.page-header-minimax {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.page-header-minimax:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/Minimaxbanner.webp);
+  z-index: 1;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.page-header-minimax .inner {
+  width: 100%;
+  padding: 0 60px;
+  margin-top: 39px;
+  position: relative;
+  z-index: 3;
+}
+.page-header-minimax .inner h2 {
+  font-size: 8em;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+  position: relative;
+  margin-top: 25%;
+}
+.page-header-minimax .inner h2:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+.page-header-minimax .inner h2:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  overflow: hidden;
+  clip: rect(0, xw00px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+.page-header-minimax .inner p {
+  font-size: 26px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-right: 40%;
+}
+
+.page-header-spacing {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Responsive Design for Smaller Screens */
+
+/* For tablet and below (screens with width <= 768px) */
+@media (max-width: 768px) {
+  .page-header-minimax .inner h2 {
+    font-size: 5em; /* Adjust based on your design */
+  }
+
+  .page-header-minimax .inner p {
+    font-size: 22px; /* You can adjust this as well */
+  }
+}
+
+/* For mobile phones (screens with width <= 480px) */
+@media (max-width: 480px) {
+  .page-header-minimax .inner h2 {
+    font-size: 3em; /*just based on your design */
+    margin-top: 440px;
+  margin-right: 10%;
+  }
+
+  .page-header-minimax .inner p {
     font-size: 10px; /* Adjust this as well */
   }
 }

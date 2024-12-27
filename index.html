@@ -158,6 +158,50 @@
 
   /* Custom CSS for Owl Carousel */
 
+/* CSS Variables for Customizable Button Colors */
+/* CSS Variables for Customizable Button Colors */
+:root {
+    --nav-btn-bg-color: #ed7207;        /* Default background color for nav buttons */
+    --nav-btn-border-color: #ed7207;    /* Default border color */
+    --nav-btn-color: black;             /* Default arrow color */
+    --nav-btn-hover-bg-color: #d75d05;  /* Hover background color */
+    --nav-btn-hover-border-color: #d75d05; /* Hover border color */
+    --nav-btn-hover-arrow-color: white;  /* Hover arrow color */
+}
+
+/* Custom next and previous buttons */
+.owl-nav button {
+    background-color: var(--nav-btn-bg-color) !important;   /* Use variable for background color */
+    border: 2px solid var(--nav-btn-border-color) !important;   /* Use variable for border color */
+    color: var(--nav-btn-color) !important;                /* Set arrow color */
+    padding: 15px;                                         /* Adjust padding inside the button */
+    border-radius: 50%;                                    /* Rounded button shape */
+    position: absolute;
+    top: 40%;                                              /* Vertically center the button */
+    transform: translateY(-50%);                           /* Adjust the center vertically */
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    width: 60px;                                           /* Fixed width for the button */
+    height: 60px;                                          /* Fixed height for the button */
+    display: flex;                                         /* Flexbox to center the icon */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Increase the font size of the arrows */
+.owl-nav button .owl-prev,
+.owl-nav button .owl-next {
+    font-size: 30px;                                       /* Increase arrow size */
+    color: var(--nav-btn-color) !important;                /* Arrow color */
+}
+
+/* Hover state for nav buttons */
+.owl-nav button:hover {
+    background-color: var(--nav-btn-hover-bg-color) !important;   /* Hover background */
+    border: 2px solid var(--nav-btn-hover-border-color) !important; /* Hover border */
+    color: var(--nav-btn-hover-arrow-color) !important;            /* Hover arrow color */
+}
+
 /* Ensure no padding or margin on body or html */
 html, body {
   margin: 0;
@@ -225,36 +269,44 @@ html, body {
 /* Card text styling */
 .card-text {
   font-size: 22px;
-  color: goldenrod;
+  color: #ed7207;
   margin-top: 0;
 }
 
 /* Custom next and previous buttons */
+/* Custom next and previous buttons */
 .owl-nav button {
-  background-color: #ff5733;   /* Customize button background color */
-  border: 2px solid #c70039;   /* Customize button border color */
-  color: black;                /* Set the arrow color */
-  padding: 15px;               /* Adjust padding inside the button */
-  border-radius: 50%;          /* Rounded button shape */
-  position: absolute;
-  top: 40%;                    /* Vertically center the button */
-  transform: translateY(-50%); /* Adjust the center vertically */
-  z-index: 10;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  width: 60px;                 /* Fixed width for the button */
-  height: 60px;                /* Fixed height for the button */
-  display: flex;               /* Flexbox to center the icon */
-  justify-content: center;
-  align-items: center;
+    background-color: var(--nav-btn-bg-color);   /* Use variable for background color */
+    border: 2px solid var(--nav-btn-border-color);   /* Use variable for border color */
+    color: var(--nav-btn-color);                /* Set arrow color */
+    padding: 15px;               /* Adjust padding inside the button */
+    border-radius: 50%;          /* Rounded button shape */
+    position: absolute;
+    top: 40%;                    /* Vertically center the button */
+    transform: translateY(-50%); /* Adjust the center vertically */
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    width: 60px;                 /* Fixed width for the button */
+    height: 60px;                /* Fixed height for the button */
+    display: flex;               /* Flexbox to center the icon */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Increase the font size of the arrows */
 .owl-nav button .owl-prev,
 .owl-nav button .owl-next {
-  font-size: 30px;             /* Increase arrow size */
-  color: goldenrod;                /* Set arrow color */
-
+    font-size: 30px;             /* Increase arrow size */
+    color: var(--nav-btn-color); /* Arrow color */
 }
+
+/* Hover state for nav buttons */
+.owl-nav button:hover {
+    background-color: var(--nav-btn-hover-bg-color);   /* Hover background */
+    border: 2px solid var(--nav-btn-hover-border-color);   /* Hover border */
+    color: var(--nav-btn-hover-arrow-color);                /* Hover arrow color */
+}
+
 
 /* Position the left and right arrows */
 
@@ -453,14 +505,11 @@ html, body {
                     </h1>
                     
 
-                      <p class="text-muted" style="font-size:17px; text-align: justify; text-justify: inter-word;margin-top: 65px;word-spacing: -2.2px;"><span style="color:white">
-                          At Happy Us Entertainment, we know that 'different strokes for different folks' is the essence of
-                          effective marketing. Our customizable strategies are designed to meet the unique needs of every 
-                          client, ensuring memorable brand experiences that resonate deeply with diverse audiences. With our 
-                          dynamic team of experts, we create influential marketing solutions that boost visibility and drive growth,
-                          because your brand deserves the spotlight!
-                        </span>
-                      </p>
+                    <h6 class="ar" style="color: white; text-align: justify;
+                    text-justify: inter-word;margin-top: 40px;">At Happy Us Entertainment, we know that 'different strokes for different folks' is the essence of effective marketing.
+                       Our customizable strategies are designed to meet the unique needs of every client, ensuring memorable brand experiences that resonate
+                        deeply with diverse audiences. With our dynamic team of experts, we create influential marketing solutions that boost visibility 
+                        and drive growth, because your brand deserves the spotlight!</h6>
                      
                         <a href="showcases-four-cols.html" style="color: #ed7207;">LEARN MORE</a>
                       </a>
@@ -667,15 +716,15 @@ html, body {
               <p span style="color: white; margin-top: 40px;">Happy Us Entertainment LLP is your creative compass in the bustling marketing world. We transform visions into vibrant realities. With an eclectic team of imaginative strategists and storytellers, we don’t just promote brands; we craft unforgettable journeys that captivate audiences and spark genuine connections!</p>
               <h5 class="mt-4 fw-bold" span style="color: white;">Our Business Partnerships</h5>
               <ul class="list-unstyled">
-                  <li class="mb-2" span style="color: white;">• <strong>Cocktails of Tomorrow</strong></li>
-                  <img src="images/icon01.png" alt="Image" style="width: 57.39px; height: 55px;">
+                  <li class="mb-2" span style="color: white;">• <strong>The Specialists</strong></li>
+                  <img src="images/The Specialist.webp" alt="Image" style="width: 57.39px; height: 55px;">
 
               </ul>
               <a href="showcases-four-cols.html" style="color: #ed7207;">LEARN MORE</a>
           </div>
           <!-- Image Section -->
           <div class="col-lg-6">
-              <img src="images/Ikshan logo.webp" alt="Team Photo" class="img-fluid rounded">
+              <img src="images/Team.webp" alt="Team Photo" class="img-fluid rounded">
           </div>
       </div>
   </div>
@@ -697,9 +746,9 @@ html, body {
             <div class="card">
               <h5 class="card-title">Business OR Brand
               </h5>
-              <p class="card-text">Around 10% of startups survive beyond their first five years & out of successful ventures. 
+              <p class="card-text">Around 10% of startups survive beyond their first five years & out of successful ventures. <br>
 
-                & around 20% of these are considered to develop a strong brand identity.
+                And around 20% of these are considered to develop a strong brand identity.
                 
                 </p>
             </div>
@@ -811,6 +860,16 @@ $(document).ready(function(){
       navText: ["<", ">"],    // Custom text for the navigation buttons
     });
   });
+
+
+  // Example of changing button colors dynamically with JavaScript
+document.documentElement.style.setProperty('--nav-btn-bg-color', '#ed7207');
+document.documentElement.style.setProperty('--nav-btn-border-color', '#ed7207');
+document.documentElement.style.setProperty('--nav-btn-color', '#ffffff');
+document.documentElement.style.setProperty('--nav-btn-hover-bg-color', '#ed7207');
+document.documentElement.style.setProperty('--nav-btn-hover-border-color', '#ed7207');
+document.documentElement.style.setProperty('--nav-btn-hover-arrow-color', '#ffffff');
+
 </script>
 </main>
 </body>

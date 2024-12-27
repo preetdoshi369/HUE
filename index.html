@@ -70,15 +70,80 @@ body {
 }
 
 .btn-primary {
-  background-color:darkgray;
+  background-color: darkgray;
   border-color: black;
   border-radius: 20px;
-  
+  padding: 10px 20px; /* Added padding to make the button larger */
 }
 
 .btn-primary:hover {
   background-color: #ed7207;
 }
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .works {
+    padding: 20px; /* Add padding to the section */
+  }
+
+  .left-content {
+    text-align: center; /* Center align the text on tablets */
+  }
+
+  .side-text {
+    font-size: 16px; /* Increase font size slightly for better readability */
+    margin-left: 0; /* Reset margin */
+  }
+
+  .btn-primary {
+    padding: 12px 24px; /* Increase padding to make the button easier to tap */
+    font-size: 1rem; /* Slightly increase font size for better readability */
+  }
+}
+
+/* For Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .works {
+    padding: 15px; /* Add padding to the section on mobile */
+  }
+
+  .left-content {
+    text-align: center; /* Center align the text on mobile */
+  }
+
+  .side-text {
+    font-size: 14px; /* Adjust font size for small screens */
+    margin-left: 0; /* Reset margin */
+  }
+
+  .btn-primary {
+    padding: 12px 20px; /* Increase padding for easier tapping on mobile */
+    font-size: 1rem; /* Increase font size for mobile readability */
+  }
+}
+
+/* For Very Small Devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .works {
+    padding: 10px; /* Add smaller padding on very small devices */
+  }
+
+  .left-content h1 {
+    font-size: 1.8rem; /* Make the heading smaller for small screens */
+  }
+
+  .side-text {
+    font-size: 12px; /* Reduce font size of vertical text for very small screens */
+  }
+
+  .btn-primary {
+    padding: 10px 18px; /* Adjust button padding */
+    font-size: 0.9rem; /* Make font size smaller on very small devices */
+  }
+}
+
 
 </style>
 

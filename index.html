@@ -15,6 +15,17 @@
     <!-- Bootstrap CSS for second section acc to site ref -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap CSS  for slider-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- Owl Carousel CSS slider -->
+ <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+
+ <!--bootstrap css for second last section site ref by sir-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
   <!-- SOCIAL MEDIA META -->
   <meta property="og:description" content="Unicord | Creative Portfolio for Freelancers & Agencies">
   <meta property="og:image" content="http://www.themezinho.net/unicord/preview.png">
@@ -48,107 +59,266 @@
 
 <!--css code for second section acc to site ref-->
 <style>
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: white;
-}
-
-.works {
-  background-color: white; /* Set the background color to white for the section */
-}
-
-.left-content {
-  text-align: left;
-}
-
-.side-text {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  font-size: 14px;
-  margin-left: -20px;
-}
-
-.btn-primary {
-  background-color: darkgray;
-  border-color: black;
-  border-radius: 20px;
-  padding: 10px 20px; /* Added padding to make the button larger */
-}
-
-.btn-primary:hover {
-  background-color: #ed7207;
-}
-
-/* Media Queries for Responsiveness */
-
-/* For Tablets (max-width: 992px) */
-@media (max-width: 992px) {
-  .works {
-    padding: 20px; /* Add padding to the section */
+ 
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
   }
 
-  .left-content {
-    text-align: center; /* Center align the text on tablets */
+  .works {
+    background-color: black; /* Set the background color to white for the section */
+  }
+
+  .left-content-preet {
+    text-align: left;
   }
 
   .side-text {
-    font-size: 16px; /* Increase font size slightly for better readability */
-    margin-left: 0; /* Reset margin */
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 14px;
+    margin-left: -20px;
   }
 
   .btn-primary {
-    padding: 12px 24px; /* Increase padding to make the button easier to tap */
-    font-size: 1rem; /* Slightly increase font size for better readability */
+    background-color: darkgray;
+    border-color: black;
+    border-radius: 20px;
+    padding: 10px 20px; /* Added padding to make the button larger */
   }
+
+  .btn-primary:hover {
+    background-color: #ed7207;
+  }
+
+  /* Media Queries for Responsiveness */
+  /* For Tablets (max-width: 992px) */
+  @media (max-width: 992px) {
+    .works {
+      padding: 20px; /* Add padding to the section */
+    }
+
+    .left-content-preet {
+      text-align: center; /* Center align the text on tablets */
+    }
+
+    .side-text {
+      font-size: 16px; /* Increase font size slightly for better readability */
+      margin-left: 0; /* Reset margin */
+    }
+
+    .btn-primary {
+      padding: 12px 24px; /* Increase padding to make the button easier to tap */
+      font-size: 1rem; /* Slightly increase font size for better readability */
+    }
+  }
+
+  /* For Mobile Devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .works {
+      padding: 15px; /* Add padding to the section on mobile */
+    }
+
+    .left-content-preet {
+      text-align: center; /* Center align the text on mobile */
+    }
+
+    .side-text {
+      font-size: 14px; /* Adjust font size for small screens */
+      margin-left: 0; /* Reset margin */
+    }
+
+    .btn-primary {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding: 12px 20px; /* Increase padding for easier tapping on mobile */
+      font-size: 1rem; /* Increase font size for mobile readability */
+    }
+  }
+
+  /* For Very Small Devices (max-width: 576px) */
+  @media (max-width: 576px) {
+    .works {
+      padding: 10px; /* Add smaller padding on very small devices */
+    }
+
+    .left-content-preet h1 {
+      font-size: 1.8rem; /* Make the heading smaller for small screens */
+    }
+
+    .side-text {
+      font-size: 12px; /* Reduce font size of vertical text for very small screens */
+    }
+
+    .btn-primary {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding: 10px 18px; /* Adjust button padding */
+      font-size: 0.9rem; /* Make font size smaller on very small devices */
+    }
+  }
+
+  /* Custom CSS for Owl Carousel */
+
+/* Ensure no padding or margin on body or html */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* For Mobile Devices (max-width: 768px) */
+/* Remove any padding/margin around the container */
+.container-slider {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Set a custom height for the carousel container */
+.owl-carousel {
+  width: 100vw;           /* Full width of the viewport */
+  height: 500px;          /* Custom height */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;    /* Vertically center the content */
+  position: relative;     /* For positioning the navigation buttons */
+}
+
+/* Ensure that each item takes full height of the carousel */
+.owl-carousel .item {
+  padding: 0;             /* No padding */
+  margin: 0;              /* No margin */
+  width: 100%;            /* Full width */
+  height: 100%;           /* Full height */
+  box-sizing: border-box; /* Include padding in total height and width */
+}
+
+/* Styling for the cards inside each item */
+.card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%;            /* Full width of the item */
+  height: 400px;          /* Fixed height for the card */
+  padding: 20px;          /* Padding inside the card */
+ 
+  background-color: white; /* White background */
+  box-sizing: border-box; /* Ensure padding doesn't break layout */
+  display: flex;           /* Flexbox to center card content */
+  flex-direction: column;  /* Stack elements vertically */
+  justify-content: center; /* Vertically center the content */
+  align-items: center;     /* Horizontally center the content */
+  text-align: center;      /* Ensure text is centered horizontally */
+  flex-grow: 1;            /* Ensure the card takes up full available space */
+  position: relative;      /* Make card a positioned container for arrows */
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 6rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* Card text styling */
+.card-text {
+  font-size: 4rem;
+  color: goldenrod;
+  margin-top: 0;
+}
+
+/* Custom next and previous buttons */
+.owl-nav button {
+  background-color: #ff5733;   /* Customize button background color */
+  border: 2px solid #c70039;   /* Customize button border color */
+  color: black;                /* Set the arrow color */
+  padding: 15px;               /* Adjust padding inside the button */
+  border-radius: 50%;          /* Rounded button shape */
+  position: absolute;
+  top: 40%;                    /* Vertically center the button */
+  transform: translateY(-50%); /* Adjust the center vertically */
+  z-index: 10;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 60px;                 /* Fixed width for the button */
+  height: 60px;                /* Fixed height for the button */
+  display: flex;               /* Flexbox to center the icon */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Increase the font size of the arrows */
+.owl-nav button .owl-prev,
+.owl-nav button .owl-next {
+  font-size: 30px;             /* Increase arrow size */
+  color: goldenrod;                /* Set arrow color */
+
+}
+
+/* Position the left and right arrows */
+
+.owl-prev {
+  left: -15px; /* Adjust position for the right arrow */
+ 
+}
+.owl-next {
+  right: 10px; /* Adjust position for the right arrow */
+}
+
+/* Dots navigation styling */
+.owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: black;  /* Remove the background color */
+  border: 2px solid goldenrod;    /* Optional: add a border color if desired */
+  transition: background-color 0.3s ease;
+}
+
+.owl-dots .owl-dot.active {
+   /* You can also style the active dot here */
+  border: none;                   /* Optional: remove the border for the active dot */
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* Adjust the container for small screens */
 @media (max-width: 768px) {
-  .works {
-    padding: 15px; /* Add padding to the section on mobile */
+  .owl-carousel .item {
+    padding: 0;               /* No padding on smaller screens */
   }
 
-  .left-content {
-    text-align: center; /* Center align the text on mobile */
+  .card-title {
+    font-size: 1.25rem;
   }
 
-  .side-text {
-    font-size: 14px; /* Adjust font size for small screens */
-    margin-left: 0; /* Reset margin */
-  }
-
-  .btn-primary {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 12px 20px; /* Increase padding for easier tapping on mobile */
-    font-size: 1rem; /* Increase font size for mobile readability */
+  .card-text {
+    font-size: 0.9rem;
   }
 }
 
-/* For Very Small Devices (max-width: 576px) */
 @media (max-width: 576px) {
-  .works {
-    padding: 10px; /* Add smaller padding on very small devices */
+  .owl-carousel .item {
+    padding: 0;               /* No padding on smaller screens */
   }
 
-  .left-content h1 {
-    font-size: 1.8rem; /* Make the heading smaller for small screens */
+  .card-title {
+    font-size: 1rem;
   }
 
-  .side-text {
-    font-size: 12px; /* Reduce font size of vertical text for very small screens */
-  }
-
-  .btn-primary {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 10px 18px; /* Adjust button padding */
-    font-size: 0.9rem; /* Make font size smaller on very small devices */
+  .card-text {
+    font-size: 0.85rem;
   }
 }
-
-
 </style>
 
 
@@ -273,35 +443,35 @@ body {
   <!-- end header-spacing -->
   <main>
     <section class="works">
-        <div class="container-fluid vh-100 d-flex align-items-center">
-            <div class="row w-100">
-                <!-- Left Section -->
-                <div class="col-md-6 d-flex flex-column justify-content-center">
-                    <!--<p class="side-text">Say Hello</p>-->
-                    <div class="left-content" span style="margin-left: 20%;">
-                        <!--<p class="text-uppercase text-muted">Digital</p>-->
-                        <h1>Driving Success with Tailored 
-                          <span style="color:#ed7207;"><br>Digital Marketing and Branding Strategies!</span></h1>
-                        <p class="text-muted" span style="font-size:20px; text-align: justify;
-                        text-justify: inter-word;
-                      ">
+      <div class="container-fluid vh-100 d-flex align-items-center" span style="margin-top: -160px; margin-bottom: -120px;">
+          <div class="row w-100">
+              <!-- Left Section -->
+              <div class="col-md-6 d-flex flex-column justify-content-center">
+                  <div class="left-content-preet" style="margin-left: 20%;">
+                      <h1 span style="color: white;">Driving Success with Tailored </span>
+                          <span style="color:#ed7207;"><br>Digital Marketing and Branding Strategies!</span>
+                      </h1>
+                      <p class="text-muted" style="font-size:20px; text-align: justify; text-justify: inter-word;"><span style="color:white">
                           At Happy Us Entertainment, we know that 'different strokes for different folks' is the essence of
-                           effective marketing. Our customizable strategies are designed to meet the unique needs of every 
-                           client, ensuring memorable brand experiences that resonate deeply with diverse audiences. With our 
-                           dynamic team of experts, we create influential marketing solutions that boost visibility and drive growth,
-                            because your brand deserves the spotlight!</span></p>
-                          <a href="showcases-four-cols.html" class="btn btn-primary px-4 py-2" span style="color: black;"><span class="button-icon">Find Out More ↗</span> </span></a>
-
-                    </div>
-                </div>
-
-                <!-- Right Section -->
-                <div class="col-md-6 position-relative">
-                    <img src="images/ARAIYALOGO.webp" alt="Woman working" class="img-fluid rounded">
-                </div>
-            </div>
-        </div>
-    </section>
+                          effective marketing. Our customizable strategies are designed to meet the unique needs of every 
+                          client, ensuring memorable brand experiences that resonate deeply with diverse audiences. With our 
+                          dynamic team of experts, we create influential marketing solutions that boost visibility and drive growth,
+                          because your brand deserves the spotlight!
+                        </span>
+                      </p>
+                      <a href="showcases-four-cols.html" class="btn btn-primary px-4 py-2" style="color: black;">
+                          <span class="button-icon">Find Out More ↗</span>
+                      </a>
+                  </div>
+              </div>
+  
+              <!-- Right Section with class name 'right-content' -->
+              <div class="col-md-6 position-relative right-content">
+                  <img src="images/CASESTUDY1.webp" alt="Woman working" class="img-fluid rounded">
+              </div>
+          </div>
+      </div>
+  </section>
 
 
               <!-- end works -->
@@ -484,8 +654,56 @@ body {
       </div>
       <!-- end sides -->
     </section>
+
+    <div class="container my-5">
+      <div class="row align-items-center">
+          <!-- Text Section -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+              <h2 class="fw-bold" span style="color: white;">Building Brands Together:<br><span style="color: #ed7207;"> Your Go-To Digital Agency<br> for Creative Marketing Solutions
+              </span></h2>
+              <p class="mt-4" span style="color: white;">We’re true F&B insiders.</p>
+              <p span style="color: white;">Happy Us Entertainment LLP is your creative compass in the bustling marketing world. We transform visions into vibrant realities. With an eclectic team of imaginative strategists and storytellers, we don’t just promote brands; we craft unforgettable journeys that captivate audiences and spark genuine connections!</p>
+              <h5 class="mt-4 fw-bold" span style="color: white;">Our Business Partnerships</h5>
+              <ul class="list-unstyled">
+                  <li class="mb-2" span style="color: white;">• <strong>Cocktails of Tomorrow</strong></li>
+                  <li span style="color: white;">• <strong>Cobbler & Crew</strong></li>
+              </ul>
+              <a href="#" class="btn btn-primary mt-3">Read more</a>
+          </div>
+          <!-- Image Section -->
+          <div class="col-lg-6">
+              <img src="images/Ikshan logo.webp" alt="Team Photo" class="img-fluid rounded">
+          </div>
+      </div>
+  </div>
+
+    <div class="container-preet mt-5">
+  
+      <!-- Owl Carousel -->
+      <div class="container-slider">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card">
+              <h5 class="card-title">Slide 1</h5>
+              <p class="card-text">This is the first slide.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <h5 class="card-title">Slide 2</h5>
+              <p class="card-text">This is the second slide.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <h5 class="card-title">Slide 3</h5>
+              <p class="card-text">This is the third slide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- end full-media-content -->
-    <section class="logos">
+    <!--<section class="logos">
       <div class="container">
         <ul>
           <li class="wow fadeInUp">
@@ -514,7 +732,7 @@ body {
             </figure>
           </li>
         </ul>
-      </div>
+      </div>-->
       <!-- end container -->
     </section>
     <!-- end logos -->
@@ -561,6 +779,29 @@ body {
 <!-- Bootstrap JS for second section acc to site ref-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- jQuery and Owl Carousel JS slider part -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+<!--bootstrap js for second last slide acc to sir site ref-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+
+//slider part
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 1,               // Number of items per slide
+      loop: true,             // Infinite loop
+      margin: 0,              // No space between slides
+      autoplay: true,         // Autoplay
+      autoplayTimeout: 10000,  // Time interval between slides (3 seconds)
+      nav: true,              // Show next/prev buttons
+      dots: true,             // Show dots navigation
+      navText: ["<", ">"],    // Custom text for the navigation buttons
+    });
+  });
+</script>
+</main>
 </body>
 
 </html>

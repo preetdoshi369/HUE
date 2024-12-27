@@ -274,38 +274,7 @@ html, body {
 }
 
 /* Custom next and previous buttons */
-/* Custom next and previous buttons */
-.owl-nav button {
-    background-color: var(--nav-btn-bg-color);   /* Use variable for background color */
-    border: 2px solid var(--nav-btn-border-color);   /* Use variable for border color */
-    color: var(--nav-btn-color);                /* Set arrow color */
-    padding: 15px;               /* Adjust padding inside the button */
-    border-radius: 50%;          /* Rounded button shape */
-    position: absolute;
-    top: 40%;                    /* Vertically center the button */
-    transform: translateY(-50%); /* Adjust the center vertically */
-    z-index: 10;
-    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
-    width: 60px;                 /* Fixed width for the button */
-    height: 60px;                /* Fixed height for the button */
-    display: flex;               /* Flexbox to center the icon */
-    justify-content: center;
-    align-items: center;
-}
 
-/* Increase the font size of the arrows */
-.owl-nav button .owl-prev,
-.owl-nav button .owl-next {
-    font-size: 30px;             /* Increase arrow size */
-    color: var(--nav-btn-color); /* Arrow color */
-}
-
-/* Hover state for nav buttons */
-.owl-nav button:hover {
-    background-color: var(--nav-btn-hover-bg-color);   /* Hover background */
-    border: 2px solid var(--nav-btn-hover-border-color);   /* Hover border */
-    color: var(--nav-btn-hover-arrow-color);                /* Hover arrow color */
-}
 
 
 /* Position the left and right arrows */
@@ -503,14 +472,11 @@ html, body {
                             Digital Marketing and Branding Strategies!
                         </span>
                     </h1>
-                    
-
-                    <h6 class="ar" style="color: white; text-align: justify;
-                    text-justify: inter-word;margin-top: 40px;">At Happy Us Entertainment, we know that 'different strokes for different folks' is the essence of effective marketing.
-                       Our customizable strategies are designed to meet the unique needs of every client, ensuring memorable brand experiences that resonate
-                        deeply with diverse audiences. With our dynamic team of experts, we create influential marketing solutions that boost visibility 
-                        and drive growth, because your brand deserves the spotlight!</h6>
-                     
+                  
+                        <p span style="color: white; margin-top: 40px;">At Happy Us Entertainment, we know that 'different strokes for different folks' is the essence of effective marketing.
+                          Our customizable strategies are designed to meet the unique needs of every client, ensuring memorable brand experiences that resonate
+                           deeply with diverse audiences. With our dynamic team of experts, we create influential marketing solutions that boost visibility 
+                           and drive growth, because your brand deserves the spotlight!</p>
                         <a href="showcases-four-cols.html" style="color: #ed7207;">LEARN MORE</a>
                       </a>
                   </div>
@@ -710,14 +676,16 @@ html, body {
       <div class="row align-items-center" span style="margin-top: 105px; margin-bottom: 65px;background-color: color-mix(in srgb, black 170%, white 5%);">
           <!-- Text Section -->
           <div class="col-lg-6 mb-4 mb-lg-0">
-              <h2 class="fw-bold" span style="color: white;">Building Brands Together:<br><span style="color: #ed7207;"> Your Go-To Digital Agency<br> for Creative Marketing Solutions
+            <h3 span style="color: white;">Building Brands Together </span></h3>
+              <h2 class="fw-bold" span style="color: #ed7207;"> Your Go-To Digital Agency<br> for Creative Marketing Solutions
               </span></h2>
               
               <p span style="color: white; margin-top: 40px;">Happy Us Entertainment LLP is your creative compass in the bustling marketing world. We transform visions into vibrant realities. With an eclectic team of imaginative strategists and storytellers, we don’t just promote brands; we craft unforgettable journeys that captivate audiences and spark genuine connections!</p>
               <h5 class="mt-4 fw-bold" span style="color: white;">Our Business Partnerships</h5>
               <ul class="list-unstyled">
-                  <li class="mb-2" span style="color: white;">• <strong>The Specialists</strong></li>
-                  <img src="images/The Specialist.webp" alt="Image" style="width: 57.39px; height: 55px;">
+                  <li class="mb-2" span style="color: white;"><strong>The Specialists</strong></li>
+                  <img src="images/The Specialist.webp" alt="Image" style="width: 140px; height: 110px;">
+
 
               </ul>
               <a href="showcases-four-cols.html" style="color: #ed7207;">LEARN MORE</a>
@@ -853,8 +821,8 @@ $(document).ready(function(){
       items: 1,               // Number of items per slide
       loop: true,             // Infinite loop
       margin: 0,              // No space between slides
-      autoplay: true,         // Autoplay
-      autoplayTimeout: 10000,  // Time interval between slides (3 seconds)
+      autoplay: false,         // Autoplay
+       // Time interval between slides (3 seconds)
       nav: true,              // Show next/prev buttons
       dots: true,             // Show dots navigation
       navText: ["<", ">"],    // Custom text for the navigation buttons

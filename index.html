@@ -60,26 +60,7 @@
 <!--css code for second section acc to site ref-->
 <style>
  
-/* Custom styles for desktop, tablet, and mobile */
 
-/* Desktop (Large screens and up) */
-@media (min-width: 1200px) {
-  .left-content-preet h1 span {
-    font-size: 60px; /* Larger font for desktop */
-  }
-
-  .left-content-preet p {
-    font-size: 16px; /* Larger font size for desktop */
-  }
-
-  .left-content-preet h3 {
-    font-size: 28px; /* Larger heading size for desktop */
-  }
-
-  .left-content-preet {
-    margin-left: 20%; /* Adjust margin for desktop */
-  }
-}
 
 /* Tablet (Medium screens) */
 @media (max-width: 1199px) and (min-width: 768px) {
@@ -100,71 +81,6 @@
   }
 }
 
-/* Mobile (Small screens) */
-@media (max-width: 768px) {
-  /* Adjusting h1 and h3 sizes specifically for mobile */
-  .left-content-preet h1 span {
-    font-size: 36px; /* Smaller font size for h1 on mobile */
-  }
-
-  .left-content-preet h3 {
-    font-size: 18px; /* Smaller font size for h3 on mobile */
-  }
-
-  .left-content-preet p {
-    font-size: 12px; /* Smaller font for mobile screens */
-  }
-
-  .left-content-preet {
-    margin-left: 5%; /* Reduce margin for small screens */
-    padding-right: 5%; /* Add padding to the right for balance */
-    display: flex; /* Flex layout for centering and alignment */
-    flex-direction: column; /* Ensure text is stacked vertically */
-    justify-content: center; /* Vertically center the content */
-    align-items: flex-start; /* Align the text to the left */
-    height: 100%; /* Ensure the container takes up full height */
-  }
-
-  .right-content img {
-    margin-left: 15%; /* Add left margin to image on mobile screens */
-    width: 90%; /* Resize the image width to 90% of its container */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .works .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 576px) {
-  /* Further adjustments for very small mobile screens */
-  .left-content-preet h1 span {
-    font-size: 26px !important; /* Further reduce font size for h1 on very small screens */
-  }
-
-  .left-content-preet h3 {
-    font-size: 16px; /* Further reduce font size for h3 on very small screens */
-  }
-
-  .left-content-preet p {
-    font-size: 12px; /* Further reduce font for very small mobile screens */
-  }
-
-  .left-content-preet {
-    margin-left: 0.2%; /* Reduce left margin for very small screens */
-  }
-
-  .right-content img {
-    margin-top: 10%;
-    margin-left: 5%; /* Further reduce left margin for very small mobile screens */
-    width: 100%; /* Resize the image width to 100% on very small screens */
-    height: 90%; /* Maintain aspect ratio */
-  }
-}
-
-
-    
 
   /* Custom CSS for Owl Carousel */
 
@@ -472,36 +388,146 @@ html, body {
   <div class="header-spacing"></div>
   <!-- end header-spacing -->
   <main>
- <section class="works">
-  <div class="container-fluid vh-100 d-flex align-items-center" style="margin-top: -135px; margin-bottom: -40px;">
-    <div class="row w-100">
-      <!-- Left Section -->
-      <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
-        <div class="left-content-preet" style="margin-left: 20%;">
-          <h3 style="color: white;">Driving Success with Tailored</h3>
-          <h1>
-            <span style="color:#ed7207; font-size:50px; font-weight: bold; font-family: 'Poppins', sans-serif;">
-              Digital Marketing and Branding Strategies!
-            </span>
-          </h1>
-
-          <p style="color: white; margin-top: 40px;">
-            At Happy Us Entertainment, we know that 'different strokes for different folks' is the essence of effective marketing.
-            Our customizable strategies are designed to meet the unique needs of every client, ensuring memorable brand experiences that resonate
-            deeply with diverse audiences. With our dynamic team of experts, we create influential marketing solutions that boost visibility
-            and drive growth, because your brand deserves the spotlight!
-          </p>
-          <a href="showcases-four-cols.html" style="color: #ed7207;">LEARN MORE</a>
+   
+    <section class="works">
+      <div class="container-fluid vh-100 d-flex align-items-center mobile-container container-desktop mobile-576" style="margin-top: -135px; margin-bottom: -40px;">
+        <div class="row w-100">
+          <!-- Left Section -->
+          <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
+            <div class="left-content-preet">
+              <h3 class="text-white">Driving Success with Tailored</h3>
+              <h1 class="highlighted-title">
+                Digital Marketing and Branding Strategies!
+              </h1>
+    
+              <p class="text-white" style="margin-top: 40px;">
+                At Happy Us Entertainment, we know that 'different strokes for different folks' is the essence of effective marketing.
+                Our customizable strategies are designed to meet the unique needs of every client, ensuring memorable brand experiences that resonate
+                deeply with diverse audiences. With our dynamic team of experts, we create influential marketing solutions that boost visibility
+                and drive growth, because your brand deserves the spotlight!
+              </p>
+              <a href="showcases-four-cols.html" style="color: #ed7207;">LEARN MORE</a>
+            </div>
+          </div>
+    
+          <!-- Right Section with class name 'right-content' -->
+          <div class="col-md-6 col-12 position-relative right-content">
+            <img src="images/CASESTUDY1.webp" alt="Woman working" class="img-fluid rounded responsive-img">
+          </div>
         </div>
       </div>
+    </section>
+    
+    <style>
+      /* Desktop (min-width: 786px) */
+      @media (min-width: 786px) {
+        .container-desktop {
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-bottom: 40px;
+          width: 100%;
+          max-width: 100%;
+          min-height: 100vh; /* Ensure full viewport height */
+        }
+    
+        h3 {
+          font-size: 1.5rem; /* Adjust font size for desktop */
+          margin-top: 5%;
+        }
+    
+        h1.highlighted-title {
+          font-size: 3rem; /* Larger font for desktop */
+          color: #ed7207;
+          font-weight: bold;
+          margin-top: 10%;
+        }
+    
+        .responsive-img {
+          width: 100%; /* Full-width for image */
+          height: auto; /* Maintain aspect ratio */
+          object-fit: cover; /* Crop image to fill container area */
+          max-height: 500px; /* Limit image height for desktop */
+        }
+    
+        .left-content-preet {
+          margin-left: 10%; /* Adjust content position */
+        }
+      }
 
-      <!-- Right Section with class name 'right-content' -->
-      <div class="col-md-6 col-12 position-relative right-content">
-        <img src="images/CASESTUDY1.webp" alt="Woman working" class="img-fluid rounded">
-      </div>
-    </div>
-  </div>
-</section>
+
+
+    /* Mobile (max-width: 786px) */
+@media (max-width: 786px) {
+  .mobile-container {
+    padding-left: 30px; /* Increased padding for mobile */
+    padding-right: 30px; /* Increased padding for mobile */
+    padding-bottom: 100px; /* Increased bottom padding */
+    width: 100%; /* Ensure full width */
+    max-width: 100%;
+    min-height: 120vh; /* Increase height for mobile */
+  }
+
+  h3.text-white {
+    font-size: 0.8rem; /* Reduced font size for mobile */
+    margin-top: 10%;
+  }
+
+  h1.highlighted-title {
+    font-size: 1.2rem; /* Smaller font for mobile */
+    color: #ed7207;
+    font-weight: bold;
+    margin-top: 6%;
+  }
+
+  .responsive-img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop image to fill container area */
+    max-height: 300px; /* Limit image height for mobile */
+  }
+
+  .left-content-preet {
+    margin-left: 0; /* Adjust content alignment for mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Reduce container height for very small screens */
+  .mobile-576{
+    min-height: 120vh; /* Reduce height to 60% of the viewport height (adjust as needed) */
+  }
+
+  /* Keep font sizes and other styles the same, no changes here */
+  .left-content-preet h1 span {
+    font-size: 26px !important; /* Keep font size same */
+  }
+
+  .left-content-preet h3 {
+    font-size: 20px; /* Keep font size same */
+  }
+
+  .left-content-preet p {
+    font-size: 12px; /* Keep font size same */
+  }
+
+  .left-content-preet {
+    margin-left: 0.2%; /* Keep left margin same */
+  }
+
+  .right-content img {
+    margin-top: 20%;
+    margin-left: 5%; /* Keep left margin same */
+    width: 100%; /* Resize the image width to 100% on very small screens */
+    height: 100%; /* Keep image height the same */
+  }
+}
+
+    </style>
+    
+    
+    
+    
+    
 
 
 

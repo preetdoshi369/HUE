@@ -2273,12 +2273,12 @@ a:hover {
   z-index: 3;
 }
 .page-header-harsharakesh .inner h2 {
-  font-size: 8em;
+  font-size: 4.5em;
   font-weight: 800;
   line-height: 1;
   color: #fff;
   position: relative;
-  margin-top: 25%;
+  margin-top: 35%;
 }
 .page-header-harsharakesh .inner h2:before {
   content: attr(data-text);
@@ -2324,6 +2324,7 @@ a:hover {
 @media (max-width: 768px) {
   .page-header-harsharakesh .inner h2 {
     font-size: 5em; /* Adjust based on your design */
+  
   }
 
   .page-header-harsharakesh .inner p {
@@ -2334,9 +2335,10 @@ a:hover {
 /* For mobile phones (screens with width <= 480px) */
 @media (max-width: 480px) {
   .page-header-harsharakesh .inner h2 {
-    font-size: 3em; /*just based on your design */
+    font-size: 0.9em; /*just based on your design */
     margin-top: 440px;
   margin-right: 10%;
+ 
   }
 
   .page-header-harsharakesh .inner p {
@@ -2758,7 +2760,7 @@ a:hover {
 /* For mobile phones (screens with width <= 480px) */
 @media (max-width: 480px) {
   .page-header-casestudy .inner h2 {
-    font-size: 3em; /*just based on your design */
+    font-size: 1em; /*just based on your design */
     margin-top: 440px;
   margin-right: 10%;
   }

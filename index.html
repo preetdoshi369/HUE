@@ -12,8 +12,8 @@
   <meta name="keywords"
     content="creative, works, showcase, portfolio, highlight, projects, parallax, agency, digital, studio, css, animation, transition, svg, html, css">
 
-    <!-- Bootstrap CSS for second section acc to site ref -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to Bootstrap CSS second slide (version 5.x) -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Bootstrap CSS  for slider-->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -60,101 +60,111 @@
 <!--css code for second section acc to site ref-->
 <style>
  
+/* Custom styles for desktop, tablet, and mobile */
 
+/* Desktop (Large screens and up) */
+@media (min-width: 1200px) {
+  .left-content-preet h1 span {
+    font-size: 60px; /* Larger font for desktop */
+  }
 
-  .works {
-    background-color:color-mix(in srgb, black 170%, white 5%) /* Set the background color to white for the section */
+  .left-content-preet p {
+    font-size: 16px; /* Larger font size for desktop */
+  }
+
+  .left-content-preet h3 {
+    font-size: 28px; /* Larger heading size for desktop */
   }
 
   .left-content-preet {
-    text-align: left;
+    margin-left: 20%; /* Adjust margin for desktop */
+  }
+}
+
+/* Tablet (Medium screens) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .left-content-preet h1 span {
+    font-size: 50px; /* Adjust font size for tablet */
   }
 
-  .side-text {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    transform: rotate(180deg);
-    font-size: 14px;
-    margin-left: -20px;
+  .left-content-preet p {
+    font-size: 14px; /* Adjust paragraph font size for tablet */
   }
 
-  .btn-primary {
-    background-color: darkgray;
-    border-color: black;
-    border-radius: 20px;
-    padding: 10px 20px; /* Added padding to make the button larger */
+  .left-content-preet h3 {
+    font-size: 24px; /* Adjust heading size for tablet */
   }
 
-  .btn-primary:hover {
-    background-color: #ed7207;
+  .left-content-preet {
+    margin-left: 15%; /* Adjust margin for tablet */
+  }
+}
+
+/* Mobile (Small screens) */
+@media (max-width: 768px) {
+  /* Adjusting h1 and h3 sizes specifically for mobile */
+  .left-content-preet h1 span {
+    font-size: 36px; /* Smaller font size for h1 on mobile */
   }
 
-  /* Media Queries for Responsiveness */
-  /* For Tablets (max-width: 992px) */
-  @media (max-width: 992px) {
-    .works {
-      padding: 20px; /* Add padding to the section */
-    }
-
-    .left-content-preet {
-      text-align: center; /* Center align the text on tablets */
-    }
-
-    .side-text {
-      font-size: 16px; /* Increase font size slightly for better readability */
-      margin-left: 0; /* Reset margin */
-    }
-
-    .btn-primary {
-      padding: 12px 24px; /* Increase padding to make the button easier to tap */
-      font-size: 1rem; /* Slightly increase font size for better readability */
-    }
+  .left-content-preet h3 {
+    font-size: 18px; /* Smaller font size for h3 on mobile */
   }
 
-  /* For Mobile Devices (max-width: 768px) */
-  @media (max-width: 768px) {
-    .works {
-      padding: 15px; /* Add padding to the section on mobile */
-    }
-
-    .left-content-preet {
-      text-align: center; /* Center align the text on mobile */
-    }
-
-    .side-text {
-      font-size: 14px; /* Adjust font size for small screens */
-      margin-left: 0; /* Reset margin */
-    }
-
-    .btn-primary {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      padding: 12px 20px; /* Increase padding for easier tapping on mobile */
-      font-size: 1rem; /* Increase font size for mobile readability */
-    }
+  .left-content-preet p {
+    font-size: 12px; /* Smaller font for mobile screens */
   }
 
-  /* For Very Small Devices (max-width: 576px) */
-  @media (max-width: 576px) {
-    .works {
-      padding: 10px; /* Add smaller padding on very small devices */
-    }
-
-    .left-content-preet h1 {
-      font-size: 1.8rem; /* Make the heading smaller for small screens */
-    }
-
-    .side-text {
-      font-size: 12px; /* Reduce font size of vertical text for very small screens */
-    }
-
-    .btn-primary {
-      margin-top: 10px;
-      margin-bottom: 20px;
-      padding: 10px 18px; /* Adjust button padding */
-      font-size: 0.9rem; /* Make font size smaller on very small devices */
-    }
+  .left-content-preet {
+    margin-left: 5%; /* Reduce margin for small screens */
+    padding-right: 5%; /* Add padding to the right for balance */
+    display: flex; /* Flex layout for centering and alignment */
+    flex-direction: column; /* Ensure text is stacked vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: flex-start; /* Align the text to the left */
+    height: 100%; /* Ensure the container takes up full height */
   }
+
+  .right-content img {
+    margin-left: 15%; /* Add left margin to image on mobile screens */
+    width: 90%; /* Resize the image width to 90% of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .works .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Further adjustments for very small mobile screens */
+  .left-content-preet h1 span {
+    font-size: 26px !important; /* Further reduce font size for h1 on very small screens */
+  }
+
+  .left-content-preet h3 {
+    font-size: 16px; /* Further reduce font size for h3 on very small screens */
+  }
+
+  .left-content-preet p {
+    font-size: 12px; /* Further reduce font for very small mobile screens */
+  }
+
+  .left-content-preet {
+    margin-left: 0.2%; /* Reduce left margin for very small screens */
+  }
+
+  .right-content img {
+    margin-top: 10%;
+    margin-left: 5%; /* Further reduce left margin for very small mobile screens */
+    width: 100%; /* Resize the image width to 100% on very small screens */
+    height: 90%; /* Maintain aspect ratio */
+  }
+}
+
+
+    
 
   /* Custom CSS for Owl Carousel */
 
@@ -239,7 +249,7 @@ html, body {
 }
 
 /* Styling for the cards inside each item */
-.card {
+.card-slide {
   border: none;
   border-radius: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -337,6 +347,8 @@ html, body {
     font-size: 0.85rem;
   }
 }
+
+
 </style>
 
 
@@ -460,35 +472,37 @@ html, body {
   <div class="header-spacing"></div>
   <!-- end header-spacing -->
   <main>
-    <section class="works">
-      <div class="container-fluid vh-100 d-flex align-items-center" span style="margin-top: -135px; margin-bottom: -40px;">
-          <div class="row w-100">
-              <!-- Left Section -->
-              <div class="col-md-6 d-flex flex-column justify-content-center">
-                  <div class="left-content-preet" style="margin-left: 20%;">
-                      <h3 span style="color: white;">Driving Success with Tailored </span></h3>
-                      <h1>
-                        <span style="color:#ed7207; font-size:50px; font-weight: bold; font-family: 'Poppins', sans-serif;">
-                            Digital Marketing and Branding Strategies!
-                        </span>
-                    </h1>
-                  
-                        <p span style="color: white; margin-top: 40px;">At Happy Us Entertainment, we know that 'different strokes for different folks' is the essence of effective marketing.
-                          Our customizable strategies are designed to meet the unique needs of every client, ensuring memorable brand experiences that resonate
-                           deeply with diverse audiences. With our dynamic team of experts, we create influential marketing solutions that boost visibility 
-                           and drive growth, because your brand deserves the spotlight!</p>
-                        <a href="showcases-four-cols.html" style="color: #ed7207;">LEARN MORE</a>
-                      </a>
-                  </div>
-              </div>
-  
-              <!-- Right Section with class name 'right-content' -->
-              <div class="col-md-6 position-relative right-content">
-                  <img src="images/CASESTUDY1.webp" alt="Woman working" class="img-fluid rounded">
-              </div>
-          </div>
+ <section class="works">
+  <div class="container-fluid vh-100 d-flex align-items-center" style="margin-top: -135px; margin-bottom: -40px;">
+    <div class="row w-100">
+      <!-- Left Section -->
+      <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
+        <div class="left-content-preet" style="margin-left: 20%;">
+          <h3 style="color: white;">Driving Success with Tailored</h3>
+          <h1>
+            <span style="color:#ed7207; font-size:50px; font-weight: bold; font-family: 'Poppins', sans-serif;">
+              Digital Marketing and Branding Strategies!
+            </span>
+          </h1>
+
+          <p style="color: white; margin-top: 40px;">
+            At Happy Us Entertainment, we know that 'different strokes for different folks' is the essence of effective marketing.
+            Our customizable strategies are designed to meet the unique needs of every client, ensuring memorable brand experiences that resonate
+            deeply with diverse audiences. With our dynamic team of experts, we create influential marketing solutions that boost visibility
+            and drive growth, because your brand deserves the spotlight!
+          </p>
+          <a href="showcases-four-cols.html" style="color: #ed7207;">LEARN MORE</a>
+        </div>
       </div>
-  </section>
+
+      <!-- Right Section with class name 'right-content' -->
+      <div class="col-md-6 col-12 position-relative right-content">
+        <img src="images/CASESTUDY1.webp" alt="Woman working" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
               <!-- end works -->
@@ -703,7 +717,7 @@ html, body {
       <div class="container-slider">
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <div class="card">
+            <div class="card-slide">
               <h5 class="card-title">Business OR Brand
               </h5>
               <p class="card-text">Around 1.1 million new businesses are registered in India each year.
@@ -711,7 +725,7 @@ html, body {
             </div>
           </div>
           <div class="item">
-            <div class="card">
+            <div class="card-slide">
               <h5 class="card-title">Business OR Brand
               </h5>
               <p class="card-text">Around 10% of startups survive beyond their first five years  <br>
@@ -723,7 +737,7 @@ html, body {
             </div>
           </div>
           <div class="item">
-            <div class="card">
+            <div class="card-slide">
               <h5 class="card-title">Is your brand creating meaningful connections <br>through the expectations and stories that resonate with consumers?
               </h5>
               <p class="card-text"> Let's work together to craft compelling narratives and build genuine relationships that make your brand unforgettable!</p>
@@ -764,6 +778,100 @@ html, body {
       </div>-->
       <!-- end container -->
     </section>
+
+
+    <section class="projects section" id="projectile" style="width: 100%;">
+      <h2 class="section__title-1">
+        <span>News & Insights</span>
+      </h2>
+    
+      <div class="projects__container container grid">
+        <article class="projects__card">
+          <div class="projects__image">
+            <img src="images/Ikshanawebsitepage.webp" alt="image" class="projects__img">
+    
+            <a href="#" class="projects__button button">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+    
+          <div class="projects__content">
+            <h3 class="projectssubtitle" >Featured</h3>
+            <h2 class="projects__title" style="color: white;">28-12-2025</h2>
+    
+            <p class="projects__description">
+              Discover the professionally designed website for Ikshana Resort and Spa Khandala, showcasing engaging visuals and a user-friendly interface optimized for seamless navigation. Our web design and development expertise ensures easy access to multiple service pages, enhancing visitor experience and boosting online engagement for luxury hospitality services
+          </div>
+    
+          <div class="projects__buttons">
+            <!--<a href="https://github.com/" target="_blank" class="projects__link">
+              <i class="ri-github-line"></i> Source Code
+            </a>-->
+    
+            <a href="https://dribbble.com/" target="_blank" class="projects__link">
+              <i class="ri-dribbble-line"></i> View
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <div class="projects__image">
+            <img src="images/Ikshanawebsitepage.webp" alt="image" class="projects__img">
+    
+            <a href="#" class="projects__button button">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+    
+          <div class="projects__content">
+            <h3 class="projectssubtitle" >Ikshana</h3><br>
+            <!--<h2 class="projects__title">Restaurant Website</h2>-->
+    
+            <p class="projects__description">
+              Discover the professionally designed website for Ikshana Resort and Spa Khandala, showcasing engaging visuals and a user-friendly interface optimized for seamless navigation. Our web design and development expertise ensures easy access to multiple service pages, enhancing visitor experience and boosting online engagement for luxury hospitality services
+          </div>
+    
+          <div class="projects__buttons">
+            <!--<a href="https://github.com/" target="_blank" class="projects__link">
+              <i class="ri-github-line"></i> Source Code
+            </a>-->
+    
+            <a href="https://dribbble.com/" target="_blank" class="projects__link">
+              <i class="ri-dribbble-line"></i> View
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <div class="projects__image">
+            <img src="images/Ikshanawebsitepage.webp" alt="image" class="projects__img">
+    
+            <a href="#" class="projects__button button">
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+    
+          <div class="projects__content">
+            <h3 class="projectssubtitle" >Ikshana</h3><br>
+            <!--<h2 class="projects__title">Restaurant Website</h2>-->
+    
+            <p class="projects__description">
+              Discover the professionally designed website for Ikshana Resort and Spa Khandala, showcasing engaging visuals and a user-friendly interface optimized for seamless navigation. Our web design and development expertise ensures easy access to multiple service pages, enhancing visitor experience and boosting online engagement for luxury hospitality services
+          </div>
+    
+          <div class="projects__buttons">
+            <!--<a href="https://github.com/" target="_blank" class="projects__link">
+              <i class="ri-github-line"></i> Source Code
+            </a>-->
+    
+            <a href="https://dribbble.com/" target="_blank" class="projects__link">
+              <i class="ri-dribbble-line"></i> View
+            </a>
+          </div>
+        </article>
+        
+        </div>
+        </section>
     <!-- end logos -->
     <footer class="footer">
       <div class="container wow fadeIn">
@@ -805,8 +913,10 @@ html, body {
   <script src='js/motion.blur.js'></script>
   <script src="js/scripts.js"></script>
 
-<!-- Bootstrap JS for second section acc to site ref-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS (optional) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
 
 <!-- jQuery and Owl Carousel JS slider part -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

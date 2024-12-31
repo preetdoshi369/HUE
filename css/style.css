@@ -1435,6 +1435,51 @@ a:hover {
   text-decoration: none;
 }
 
+/* Style the scroll-to-top button */
+.scroll-to-top-button {
+  position: fixed;             /* Fix the button in place on the page */
+  bottom: 20px;                /* Position 20px from the bottom of the screen */
+  right: 20px;                 /* Position 20px from the right edge of the screen */
+  display: flex;               /* Use flexbox to align the content */
+  align-items: center;         /* Vertically align the icon */
+  justify-content: center;     /* Center the content horizontally */
+  width: 50px;                 /* Width of the button */
+  height: 50px;                /* Height of the button */
+  background-color: #ed7207;   /* Button background color (orange) */
+  color: white;                /* Icon color */
+  text-decoration: none;       /* Remove the underline from the link */
+  border-radius: 50%;          /* Make the button circular */
+  font-size: 24px;             /* Font size for the icon */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for 3D effect */
+  z-index: 9999;               /* Ensure the button stays on top of other content */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover and click */
+  margin-right: 5%;
+}
+
+/* Hover effect for the button */
+.scroll-to-top-button:hover {
+  background-color: #ed7207;   /* Change to a slightly darker or different color on hover */
+  transform: scale(1.1);        /* Slightly enlarge the button on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Make shadow more pronounced on hover */
+}
+
+/* Active effect when the button is clicked */
+.scroll-to-top-button:active {
+  background-color: #ed7207;   /* Change color when the button is clicked (or pressed) */
+  transform: scale(1);          /* Optionally return the button to its original size when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Reduce shadow when clicked */
+}
+
+/* Optional: Icon styling */
+.scroll-to-top-button .icon {
+  font-size: 24px;              /* Icon size */
+  margin: 0;                    /* No margin */
+  line-height: 1;               /* Ensure the icon is centered */
+}
+
+
+
+
 /* PAGE HEADER */
 .page-header {
   width: 100%;
@@ -1591,9 +1636,38 @@ a:hover {
   display: flex;
   flex-wrap: nowrap;
 }
+/* Responsive Design for Smaller Screens */
+
+/* For tablet and below (screens with width <= 768px) */
+@media (max-width: 768px) {
+  .page-header-ikshana .inner h2 {
+    font-size: 5em; /* Adjust based on your design */
+  }
+
+  .page-header-ikshana .inner p {
+    font-size: 22px; /* You can adjust this as well */
+  }
+}
 
 
-/* PAGE HEADER Baamee */
+
+/* For mobile phones (screens with width <= 480px) */
+@media (max-width: 480px) {
+  .page-header-ikshana .inner h2 {
+    font-size: 3em; /*just based on your design */
+    margin-top: 200px;
+  }
+
+  .page-header-ikshana .inner p {
+    font-size: 10px; /* Adjust this as needed */
+ 
+   
+}
+
+}
+
+
+
 /* PAGE HEADER Baamee */
 .page-header-baamee {
   width: 100%;

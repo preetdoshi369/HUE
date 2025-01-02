@@ -131,6 +131,23 @@ button:focus {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+/* Ensure all boxes have equal height and width */
+.brandingbox {
+    height: 100%; /* Ensure full height inside its parent container */
+    display: flex; /* Use flexbox to maintain a consistent structure */
+    flex-direction: column; /* Ensure content inside the box is stacked vertically */
+    justify-content: space-between; /* Distribute content vertically inside the box */
+}
+
+/* Optional: Set a minimum height for all boxes to ensure uniformity */
+.brandingbox {
+    min-height: 300px; /* Adjust this value based on your desired box height */
+    width: 100%; /* Ensure full width within the container */
+}
+
+
+
 </style>
 <body>
     <div class="preloader">
@@ -193,8 +210,9 @@ button:focus {
         </div>
         <!-- end video-bg -->
         <div class="inner">
-            <h2 data-text="PROJECT">PROJECT</h2>
-            <p>We work in an integral manner and address projects in the following dimensions.</p>
+            <h2 data-text="Brand Identity & Positioning">Brand Identity & Positioning</h2>
+            <p>Crafting Identities: Where Your Brand's Story Turns Heads and Hearts!
+            </p>
         </div>
         <!-- end inner -->
         <ul class="social-media">
@@ -211,6 +229,7 @@ button:focus {
     <div class="page-header-spacing"></div>
     <!-- end page-header-spacing -->
     <main>
+        <section>
         <div class="container my-5">
             <div class="row flex justify-content-between">
 
@@ -219,131 +238,262 @@ button:focus {
                         <span class="text-secondary text-uppercase">services</span>
                         <h1 class="text-capitalize font-weight-bold my-3" style="color: white;">Our <span
                                 style="color: #ed7207">Services</span></h1>
-                        <p class="text-secondary" style="line-height: 2;">Lorem, ipsum dolor sit amet consectetur
-                            adipisicing elit. Magnam, ea atque reiciendis saepe et similique eveniet distinctio autem
-                            odit blanditiis. </p>
-                        <p class="text-secondary" style="line-height: 2;"> consequatur nesciunt doloribus ad sit
-                            reprehenderit, beatae error illo aut!</p>
+                        <p class="text-secondary" style="line-height: 2;">In today’s competitive landscape, effective branding is essential for standing out. Our branding services focus on crafting compelling identities that resonate with your target audience. By weaving your brand's story into every aspect of your identity, we create an emotional connection that fosters loyalty and trust. Storytelling transforms mere products into relatable experiences, allowing consumers to connect on a deeper level. Through strategic messaging and cohesive design, we help your brand not just turn heads, but also capture hearts, ensuring your narrative is heard and remembered in a crowded market.
+                        </p>
+                        <!--<p class="text-secondary" style="line-height: 2;"> consequatur nesciunt doloribus ad sit
+                            reprehenderit, beatae error illo aut!</p>-->
                     </div>
                 </div>
                 <div class="col-md-6">
 
                     <div class="row">
                         <div class="col-md-6 p-2 text-center">
-                            <div class="bg-dark px-3 py-5">
-
+                            <div id="brand-strategy-box" class="brandingbox bg-dark px-3 py-5">
                                 <div class="mt-3">
-                                    
                                     <p class="text-secondary">
-                                    <ul>
-                                        <h5 class="mb-2" style="font-weight: 600;text-align: left;"><a href="#" class="stretched-link"
-                                            style="color: #ed7207; ">Discovery Strategy</a></h5>
-                                        <li class="feat"> User Interviews</li>
-                                        <li class="feat">Strategy Workshops</li>
-                                        <li class="feat">User Personas</li>
-                                        <li class="feat">Content Discovery</li>
-                                        <li class="feat">Design Discovery</li>
-                                        <li class="feat">Usability Testing</li>
-                                    </ul>
+                                        <ul>
+                                            <h5 class="mb-2" style="font-weight: 600;text-align: left; font-size: 16px;">
+                                                <a href="#" class="stretched-link" style="color: #ed7207;">Brand Strategy Document</a>
+                                            </h5>
+                                            <li class="feat" style="font-size: 14px;"> Brand Vision and Mission</li>
+                                            <li class="feat" style="font-size: 14px;"> ⁠Brand Values and Personality</li>
+                                            <li class="feat" style="font-size: 14px;">Target Audience Analysis and Personas</li>
+                                            <li class="feat" style="font-size: 14px;">Competitive Landscape Analysis</li>
+                                            <li class="feat" style="font-size: 14px;">Brand Positioning Statement</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
                         </div>
-
+                    
                         <div class="col-md-6 p-2 text-center">
-                            <div class="bg-dark px-3 py-5">
-
+                            <div id="visual-identity-box" class="brandingbox bg-dark px-3 py-5">
                                 <div class="mt-3">
-                                    
                                     <p class="text-secondary">
-                                    <ul>
-                                        <h5 class="mb-2" style="font-weight: 600; text-align: left;"><a href="#" class="stretched-link"
-                                            style="color: #ed7207; ">Design + Strategy</a></h5>
-                                        <li class="feat">Information Architecture</li>
-                                        <li class="feat">UX + UI</li>
-                                        <li class="feat">Content Planning</li>
-                                        <li class="feat">Technical Planning</li>
-                                        <li class="feat">Design Discovery</li>
-                                        <li class="feat">Usability Testing</li>
-                                    </ul>
+                                        <ul>
+                                            <h5 class="mb-2" style="font-weight: 600; text-align: left; font-size: 16px;">
+                                                <a href="#" class="stretched-link" style="color: #ed7207;">Visual Identity Design</a>
+                                            </h5>
+                                            <li class="feat" style="font-size: 14px;">⁠Logo Concepts and Final Design</li>
+                                            <li class="feat" style="font-size: 14px;">⁠Color Palette Development</li>
+                                            <li class="feat" style="font-size: 14px;">⁠Typography Selection</li>
+                                            <li class="feat" style="font-size: 14px;">⁠Iconography and Graphic Elements</li>
+                                            <li class="feat" style="font-size: 14px;">Brand Style Guide</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
                         </div>
-
+                    
                         <div class="col-md-6 p-2 text-center">
-                            <div class="bg-dark px-3 py-5">
-
+                            <div id="messaging-framework-box" class="brandingbox bg-dark px-3 py-5">
                                 <div class="mt-3">
-
                                     <p class="text-secondary">
-                                    <ul class="serv">
-                                        <h5 class="mb-2" style="font-weight: 600;  text-align: left;"><a href="#"
-                                                class="stretched-link"
-                                                style="color: #ed7207; text-align: left;">Development </a></h5>
-
-                                        <li class="feat">WordPress Development</li>
-                                        <li class="feat">Branded eCommerce</li>
-                                        <li class="feat">Digital Platforms</li>
-                                        <li class="feat">HTML Development</li>
-                                        <li class="feat">Wix Development</li>
-                                        <li class="feat">Quality Assurance</li>
-                                    </ul>
+                                        <ul>
+                                            <h5 class="mb-2" style="font-weight: 600; text-align: left; font-size: 16px;">
+                                                <a href="#" class="stretched-link" style="color: #ed7207;">Messaging Framework</a>
+                                            </h5>
+                                            <li class="feat" style="font-size: 14px;">Key Messaging Pillars</li>
+                                            <li class="feat" style="font-size: 14px;">⁠Tagline Creation</li>
+                                            <li class="feat" style="font-size: 14px;">Elevator Pitch</li>
+                                            <li class="feat" style="font-size: 14px;">Copywriting Guidelines</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
                         </div>
-
+                    
                         <div class="col-md-6 p-2 text-center">
-                            <div class="bg-dark px-3 py-5">
-
+                            <div id="digital-assets-box" class="brandingbox bg-dark px-3 py-5">
                                 <div class="mt-3">
-
                                     <p class="text-secondary">
-                                    <ul class="serv">
-                                        <h5 class="mb-2" style="font-weight: 600;   text-align: left;"><a href="#" class="stretched-link"
-                                            style="color: #ed7207;text-align: left;"> Optimization</a></h5>
-                                        <li class="feat">Performance Testing</li>
-                                        <li class="feat"> Feature Development</li>
-                                        <li class="feat">Feature Development</li>
-                                        <li class="feat">HTML Development</li>
-                                        <li class="feat">Wix Development</li>
-                                        <li class="feat">Quality Assurance</li>
-                                    </ul>
+                                        <ul>
+                                            <h5 class="mb-2" style="font-weight: 600; text-align: left; font-size: 16px;">
+                                                <a href="#" class="stretched-link" style="color: #ed7207;">Digital Assets</a>
+                                            </h5>
+                                            <li class="feat" style="font-size: 14px;">Website Design and Development</li>
+                                            <li class="feat" style="font-size: 14px;">Social Media Profiles and Templates</li>
+                                            <li class="feat" style="font-size: 14px;">⁠Email Marketing Templates</li>
+                                            <li class="feat" style="font-size: 14px;">⁠Online Advertisements and Banners</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
                         </div>
-
+                    
+                        <div class="col-md-6 p-2 text-center">
+                            <div id="physical-assets-box" class="brandingbox bg-dark px-3 py-5">
+                                <div class="mt-3">
+                                    <p class="text-secondary">
+                                        <ul>
+                                            <h5 class="mb-2" style="font-weight: 600; text-align: left; font-size: 16px;">
+                                                <a href="#" class="stretched-link" style="color: #ed7207;">Physical Assets</a>
+                                            </h5>
+                                            <li class="feat" style="font-size: 14px;">Business Cards and Stationery Design</li>
+                                            <li class="feat" style="font-size: 14px;">Packaging Design</li>
+                                            <li class="feat" style="font-size: 14px;">⁠Signage and Environmental Branding</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-6 p-2 text-center">
+                            <div id="brand-guidelines-box" class="brandingbox bg-dark px-3 py-5">
+                                <div class="mt-3">
+                                    <p class="text-secondary">
+                                        <ul>
+                                            <h5 class="mb-2" style="font-weight: 600; text-align: left; font-size: 16px;">
+                                                <a href="#" class="stretched-link" style="color: #ed7207;">Brand Guidelines</a>
+                                            </h5>
+                                            <li class="feat" style="font-size: 14px;">⁠Comprehensive Brand Book outlining all visual and verbal aspects</li>
+                                            <li class="feat" style="font-size: 14px;">⁠Usage Guidelines for logo, typography, color, and photography</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-
-            </div>
-        </div>
-
+</div>                    
+</section>
         <div class="slider-container">
             <div class="left-slide">
               <div style="background-color: #fde">
-                <h1>Pink Cherrish</h1>
-                <p>to evolve into care</p>
+                <h1 style="color: black;margin-right: 16%;">Discovery Phase
+                </h1>
+                <ul>
+                <li style="color: black;">
+                <p style="color: black;">⁠Client Briefing Sessions
+                </p></li>
+                <li style="color: black;">
+                    <p style="color: black;">⁠Research and Analysis (market, audience, competitors)
+
+                    </p></li>
+                    <li style="color: black;">
+                        <p style="color: black;">Stakeholder Interviews
+
+                        </p></li>
+            </ul>
               </div>
               <div style="background-color: rgb(254,160,0)">
-                <h1>Yellow Luck</h1>
-                <p>Shinning the clouds</p>
+                <h1 style="color: black;margin-right: 3%;">Strategy Development
+                </h1>
+                <ul>
+                    <li style="color: black;">
+                    <p style="color: black;">
+                        ⁠One on one discussions to define brand vision, values, and positioning
+
+                        
+                    </p></li>
+                    <li style="color: black;">
+                        <p style="color: black;">Creation of Brand Strategy Document
+
+    
+                        </p></li>
+                        <li style="color: black;">
+                            <p style="color: black;">Approval
+
+    
+                            </p></li>
+                </ul>
               </div>
               <div style="background-color: rgb(231, 58, 95)">
-                <h1>Redness Lust</h1>
-                <p>in the wilderness</p>
+                <h1 style="color: black;margin-right: 22%;">Design Phase
+
+                </h1>
+                <ul>
+                    <li style="color: black;">
+                    <p style="color: black;">Ideation and brainstorming on visual identity
+
+                    </p></li>
+                    <li style="color: black;">
+                        <p style="color: black;">⁠Development of Logo Concepts and Visual Elements
+    
+                        </p></li>
+                        <li style="color: black;">
+                            <p style="color: black;"> ⁠Presentation of design options to the client
+
+    
+                            </p></li>
+                        </p></li>
+                        <li style="color: black;">
+                            <p style="color: black;">Revisions and finalization of the visual identity
+
+
+    
+                            </p></li>
+                </ul>
               </div>
               <div style="background-color: rgb(176, 136, 240)">
-                <h1>Lavanda Love</h1>
-                <p>in the sunset</p>
+                <h1 style="color: black;font-size: 30px;margin-right: 6%;">Messaging Development
+
+
+                </h1>
+                <ul>
+                    <li style="color: black;">
+                    <p style="color: black;"> ⁠Crafting the messaging framework and copy elements
+
+                    </p></li>
+                    <li style="color: black;">
+                        <p style="color: black;">Client Review and Revisions
+
+    
+                        </p></li>
+                        <li style="color: black;">
+                            <p style="color: black;"> ⁠Final Messaging Guidelines Delivery
+
+    
+                            </p></li>
+                </ul>
+              </div>
+              <div style="background-color: rgb(231, 58, 95)">
+                <h1 style="color: black;margin-right: 22%;">Asset Creation
+
+
+                </h1>
+                <ul>
+                    <li style="color: black;">
+                    <p style="color: black;">⁠Design and development of digital and physical assets
+
+
+                    </p></li>
+                    <li style="color: black;">
+                        <p style="color: black;"> ⁠Implementation of brand across various channels
+
+    
+                        </p></li>
+                        <li style="color: black;">
+                            <p style="color: black;"> Client Review and Final Approval
+
+
+    
+                            </p></li>
+                       
+                </ul>
+              </div>
+              <div style="background-color: rgb(231, 58, 95)">
+                <h1 style="color: black;font-size: 28px;margin-right: 2%;">Brand Guidelines Compilation
+
+                </h1>
+                <ul>
+                    <li style="color: black;">
+                    <p style="color: black;">Creation of a comprehensive Brand Guidelines document
+
+
+                    </p></li>
+                    <li style="color: black;">
+                        <p style="color: black;">Training for the client team on brand usage
+    
+                        </p></li>
+                       
+                </ul>
               </div>
             </div>
             <div class="right-slide">
               <div style="background-image: url('https://images.unsplash.com/photo-1528756514091-dee5ecaa3278?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Zmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60');"></div>
               <div style="background-image: url('https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60');"></div>
+              <div style="background-image: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60');"></div>
+              <div style="background-image: url('https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80');"></div>
               <div style="background-image: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60');"></div>
               <div style="background-image: url('https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80');"></div>
             </div>
